@@ -1,0 +1,47 @@
+.flex-container {
+  width: 300px;
+  height: 200px;
+  background-color: #c4c4c4;
+  border: 1px solid black;
+
+  display: flex;
+  /* div는 블럭 요소 -> flex 적용해서 주축이 가로방향으로 변경됨 */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  /* fle-wrap은 줄 바꿈을 통해 지정 넓이는 만족시킴 */
+  /* flex-flow: row wrap-reverse; */
+
+  /* justify-content: center; */
+  /* justify-content : 내용을 정렬하는 것 */
+  /* 주축 방향으로 정렬 */
+  /* justify-content: space-around; */
+
+  /* 교차축 방향으로 정렬 */
+  /* align-items: center; */
+}
+.flex-item {
+  color: white;
+  background-color: #ff5252;
+  width: 50px;
+  /* container의 넓이를 초과해서 item 생성시 item 넓이만큼 표현되지 않을 수 있다 */
+  /* flex-item 특징이 부모요소에 특징에 맞게 변할 수 있다.(유연성) */
+}
+.flex-item:nth-child(2n) {
+  background-color: #bf5e5e;
+}
+
+.item1 {
+  flex-grow: 2;
+  /* 넓이 비율 */
+}
+.item2 {
+  flex-grow: 1;
+  /* 넓이 비율 */
+}
+.item3 {
+  flex-grow: 2;
+  /* 넓이 비율 */
+}
